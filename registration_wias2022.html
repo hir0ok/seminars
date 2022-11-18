@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> WIAS Top Runners' Lecture </title>
+     <link rel="stylesheet" href="jgrg30reg.css" type="text/css">
+
+     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+     <!-- <script> -->
+     <!--   $('iframe').on('load', function(){ -->
+     <!--   $(this).height(this.contentWindow.document.documentElement.scrollHeight); -->
+     <!--   }).trigger('load'); -->
+     <!-- </script> -->
+  </head>
+  <body>
+    <!-- <header> -->
+    <!-- <nav class="header"> -->
+    <!--   <h1 class="header"> JGRG30 </h1> -->
+    <!--   <\!-- <ul class="header"> -\-> -->
+    <!--   <\!-- 	<li class="header"><a href="#invited" class="header">Invited Speakers</a></li> -\-> -->
+    <!--   <\!-- 	<li class="header"><a href="#regist" class="header">Registration</a></li> -\-> -->
+    <!--   <\!-- 	<li class="header"><a href="#program" class="header">Programme</a></li> -\-> -->
+    <!--   <\!-- 	<li class="header"><a href="" class="header">Venue</a></li> -\-> -->
+    <!--   <\!-- 	<li class="header"><a href="https://www-tap.scphys.kyoto-u.ac.jp/jgrg/pastjgrg.html" class="header" target="_blank">Previous JGRGs</a></li> -\-> -->
+    <!--   <\!-- </ul> -\-> -->
+    <!-- </nav> -->
+    <!-- </header> -->
+
+    <div class="frame">
+    <iframe src="https://script.google.com/macros/s/AKfycbzhCTVO3pkNsSfBmqzxc8BUzBrSQx0vIkhNW-DC5-wnHFlCiwBQ_uQa2mNjJ4k-P3W5/exec" allow="fullscreen"></iframe>
+    </div>
+    <!-- <footer> -->
+    <!--   <\!-- <section> -\-> -->
+    <!--   <ul class="footer"> -->
+    <!-- 	<li class="footer"> Contact: JGRG30 LOC </li> -->
+    <!-- 	<li class="footer"> Email: jgrg30_loc[atmark]list.waseda.jp </li> -->
+    <!-- 	<\!-- <li> Links </li> -\-> -->
+    <!--   </ul> -->
+    <!--   <\!-- </section> -\-> -->
+    <!-- </footer> -->
+
+    <!-- <iframe id="pframe" src="https://script.google.com/macros/s/AKfycby2nn1qTzWYmSGxzPLPOUCIWYv64X1SEbxY_GaJ5T3GQ0PJVKU/exec" onload="getheight()"></iframe> -->
+
+    <script>
+    <!--   ele = document.getElementById("pframe"); -->
+
+    <!--   function getheight(){ -->
+    <!--   ele.height = ele.contentWindow.document.body.scrollHeight + "px"; -->
+    <!--   } -->
+    $(document).ready(function(){
+    $('iframe').load(function(){
+    if (typeof $(this).attr('height') == 'undefined') {
+    $(this).height(this.contentWindow.document.documentElement.scrollHeight+10);
+    }
+    });
+    $('iframe').triggerHandler('load');
+    });
+    </script>
+  </body>
+</html>
